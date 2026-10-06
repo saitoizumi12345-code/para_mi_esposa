@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Mi Esposa 🖤</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:linear-gradient(135deg,#1a0033,#5a2a83,#9d6fcf);min-height:100vh;color:#fff;font-family:Poppins,sans-serif;overflow-x:hidden}
+  .tulip{position:fixed;top:-40px;animation:fall linear infinite;pointer-events:none;z-index:1}
+  @keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+  header{text-align:center;padding:60px 20px;position:relative;z-index:2}
+  header h1{font-family:Great Vibes,cursive;font-size:4rem;margin:0;text-shadow:0 0 20px rgba(255,255,255,.4)}
+  .grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:20px;position:relative;z-index:2}
+  .card{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.2)}
+  .card img{width:100%;height:300px;object-fit:cover;display:block;background:#3a2a5a}
+  .card div{padding:15px;text-align:center}
+  .card h3{font-family:Great Vibes,cursive;font-size:1.8rem;margin:0 0 5px;color:#ffd6ff}
+  .card p{margin:0;font-size:.95rem;opacity:.9}
+</style>
+</head>
+<body>
+<header>
+  <h1>Para Mi Esposa 🖤</h1>
+  <p>15 partidas que quiero repetir contigo</p>
+</header>
 
+<div class="grid">
+  <div class="card"><img src="Foto1.jpg.png"><div><h3>Nuestro duo</h3><p>Desde que te encontré, ya no quiero jugar solo</p></div></div>
+  <div class="card"><img src="Foto2.jpg.png"><div><h3>Primera partida juntos</h3><p>Ahí supe que eras mi compañera favorita</p></div></div>
+  <div class="card"><img src="Foto3.jpg.png"><div><h3>Primer win juntos</h3><p>Porque a tu lado hasta lo imposible se gana</p></div></div>
+  <div class="card"><img src="Foto4.jpg.png"><div><h3>Carreando juntos</h3><p>Tú y yo contra el mundo entero</p></div></div>
+  <div class="card"><img src="Foto5.jpg.png"><div><h3>Nuestra skin match</h3><p>Combinamos hasta en el juego, como en la vida</p></div></div>
+  <div class="card"><img src="Foto6.jpg.png"><div><h3>Mi mejor support</h3><p>Siempre me revives, dentro y fuera del juego</p></div></div>
+  <div class="card"><img src="Foto7.jpg.png"><div><h3>En el lobby esperándote</h3><p>Mi parte favorita del día es cuando entras tú</p></div></div>
+  <div class="card"><img src="Foto8.jpg.png"><div><h3>Nuestro emote</h3><p>Hasta bailamos igual, sincronizados</p></div></div>
+  <div class="card"><img src="Foto9.jpg.png"><div><h3>Foto juntos</h3><p>Mis dos personajes favoritos en una sola imagen</p></div></div>
+  <div class="card"><img src="Foto10.jpg.png"><div><h3>Desveladas contigo</h3><p>Perder el sueño, pero ganar recuerdos contigo</p></div></div>
+  <div class="card"><img src="Foto11.jpg.png"><div><h3>Mi victoria favorita</h3><p>No es la corona, eres tú</p></div></div>
+  
+  <div class="card"><img src="Foto12.jpg"><div><h3>Team de 2</h3><p>No necesitamos más squad, nosotros dos bastamos</p></div></div>
+  <div class="card"><img src="Foto13.jpg"><div><h3>Mi player 2</h3><p>La única con la que quiero compartir todos mis juegos</p></div></div>
+  <div class="card"><img src="Foto14.jpg"><div><h3>GG contigo</h3><p>Cada partida contigo es una buena partida</p></div></div>
+  <div class="card"><img src="Foto15.jpg"><div><h3>Partida infinita</h3><p>Quiero quedarme en tu lobby para siempre ¿Aceptas? 🖤</p></div></div>
+</div>
+
+<script>
+  const e=['🌷','🎮','💜','🖤'];
+  setInterval(()=>{
+    let t=document.createElement('div');
+    t.className='tulip'; t.textContent=e[Math.floor(Math.random()*e.length)];
+    t.style.left=Math.random()*100+'vw'; t.style.fontSize=20+Math.random()*20+'px';
+    t.style.animationDuration=5+Math.random()*5+'s';
+    document.body.appendChild(t); setTimeout(()=>t.remove(),8000);
+  },200);
+</script>
+</body>
+</html>
